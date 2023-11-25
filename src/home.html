@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  @@include('html/_head.htm',{ "title":"HomePage" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <section class="page__main main-page">
+          <div class="main-page__container">
+            <div class="main-page__content">
+              <div class="main-page__left left-main-page">
+                <h1 class="left-main-page__title">
+                  Develop Your Life With
+                  <span>One Step.</span>
+                </h1>
+                <p class="left-main-page__desc">
+                  Pushing the possibilities of the internet. Good for the last
+                  software. Make it A software night.
+                </p>
+                <form
+                  action="#"
+                  method="POST"
+                  class="left-main-page__form form-left-main-page"
+                >
+                  <input
+                    type="text"
+                    name="form[email]"
+                    data-error="Error"
+                    placeholder="Enter your email"
+                    class="form-left-main-page__inp input"
+                  />
+                  <button type="submit" class="form-left-main-page__btn button">
+                    Send
+                  </button>
+                </form>
+                <div class="left-main-page__devices">
+                  <div class="left-main-page__device">
+                    <img src="@img/main/02.svg" alt="android app" />
+                  </div>
+                  <div class="left-main-page__device">
+                    <img src="@img/main/03.svg" alt="ios app" />
+                  </div>
+                </div>
+              </div>
+              <div class="main-page__right right-main-page">
+                <div class="right-main-page__img">
+                  <img src="@img/main/01.png" alt="main bg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+  </body>
+</html>
